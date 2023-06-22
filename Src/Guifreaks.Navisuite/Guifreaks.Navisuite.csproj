@@ -228,6 +228,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>sgen /compiler:/keyfile:$(ProjectDir)Key.snk /force /type:Guifreaks.Navisuite.NaviBarSettings "$(TargetDir)Guifreaks.Navisuite.dll"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
