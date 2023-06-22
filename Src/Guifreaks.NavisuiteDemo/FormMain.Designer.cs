@@ -87,13 +87,10 @@
             this.naviBand1 = new Guifreaks.Navisuite.NaviBand(this.components);
             this.menuStrip1.SuspendLayout();
             this.naviBar1.SuspendLayout();
-            this.naviBand2.SuspendLayout();
             this.naviBand3.ClientArea.SuspendLayout();
-            this.naviBand3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.naviGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.naviGroup1)).BeginInit();
             this.naviGroup1.SuspendLayout();
-            this.naviBand1.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageListLarge
@@ -418,13 +415,14 @@
             // naviBand2
             // 
             // 
-            // naviBand2.ClientArea
+            // 
             // 
             this.naviBand2.ClientArea.LayoutStyle = Guifreaks.Navisuite.NaviLayoutStyle.StyleFromOwner;
             this.naviBand2.ClientArea.Location = new System.Drawing.Point(0, 0);
             this.naviBand2.ClientArea.Name = "ClientArea";
             this.naviBand2.ClientArea.Size = new System.Drawing.Size(230, 260);
             this.naviBand2.ClientArea.TabIndex = 0;
+            this.naviBand2.Controls.Add(this.naviBand2.ClientArea);
             this.naviBand2.LargeImageIndex = 1;
             this.naviBand2.LayoutStyle = Guifreaks.Navisuite.NaviLayoutStyle.StyleFromOwner;
             this.naviBand2.Location = new System.Drawing.Point(1, 27);
@@ -437,7 +435,7 @@
             // naviBand3
             // 
             // 
-            // naviBand3.ClientArea
+            // 
             // 
             this.naviBand3.ClientArea.Controls.Add(this.naviGroup2);
             this.naviBand3.ClientArea.Controls.Add(this.naviGroup1);
@@ -446,11 +444,11 @@
             this.naviBand3.ClientArea.Name = "ClientArea";
             this.naviBand3.ClientArea.Size = new System.Drawing.Size(1, 1);
             this.naviBand3.ClientArea.TabIndex = 0;
+            this.naviBand3.Controls.Add(this.naviBand3.ClientArea);
             this.naviBand3.LargeImageIndex = 2;
             this.naviBand3.LayoutStyle = Guifreaks.Navisuite.NaviLayoutStyle.StyleFromOwner;
             this.naviBand3.Location = new System.Drawing.Point(1, 27);
             this.naviBand3.Name = "naviBand3";
-            this.naviBand3.Size = new System.Drawing.Size(0, 0);
             this.naviBand3.SmallImageIndex = 3;
             this.naviBand3.TabIndex = 7;
             this.naviBand3.Text = "History (B3)";
@@ -520,7 +518,7 @@
             // naviBand1
             // 
             // 
-            // naviBand1.ClientArea
+            // 
             // 
             this.naviBand1.ClientArea.LayoutStyle = Guifreaks.Navisuite.NaviLayoutStyle.StyleFromOwner;
             this.naviBand1.ClientArea.Location = new System.Drawing.Point(0, 0);
@@ -528,11 +526,11 @@
             this.naviBand1.ClientArea.Size = new System.Drawing.Size(1, 1);
             this.naviBand1.ClientArea.TabIndex = 0;
             this.naviBand1.ClientArea.Text = "Naviband1";
+            this.naviBand1.Controls.Add(this.naviBand1.ClientArea);
             this.naviBand1.LargeImageIndex = 0;
             this.naviBand1.LayoutStyle = Guifreaks.Navisuite.NaviLayoutStyle.StyleFromOwner;
             this.naviBand1.Location = new System.Drawing.Point(1, 27);
             this.naviBand1.Name = "naviBand1";
-            this.naviBand1.Size = new System.Drawing.Size(0, 0);
             this.naviBand1.SmallImageIndex = 0;
             this.naviBand1.TabIndex = 0;
             this.naviBand1.Text = "Favorites (B1)";
@@ -575,13 +573,10 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.naviBar1.ResumeLayout(false);
-            this.naviBand2.ResumeLayout(false);
             this.naviBand3.ClientArea.ResumeLayout(false);
-            this.naviBand3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.naviGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.naviGroup1)).EndInit();
             this.naviGroup1.ResumeLayout(false);
-            this.naviBand1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
