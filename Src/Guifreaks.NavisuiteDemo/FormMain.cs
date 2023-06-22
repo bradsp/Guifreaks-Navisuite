@@ -147,7 +147,8 @@ namespace Guifreaks.NavisuiteDemo
             //    }
             //}
 
-      }
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -173,29 +174,30 @@ namespace Guifreaks.NavisuiteDemo
             naviBar1.PerformLayout();
         }
 
-      private void buttonLoadSettings_Click(object sender, EventArgs e)
-      {
-         if (openFileDialogSettings.ShowDialog() == DialogResult.OK)
-         {
-            try
-            {
-               string fileName = openFileDialogSettings.FileName;
-               NaviBarSettingsSerializer serial = new NaviBarSettingsSerializer();
-               using (StreamReader reader = new StreamReader(fileName))
-               {
-                  NaviBarSettings settings = serial.Deserialize(reader) as NaviBarSettings;
-                  if (settings != null)
-                  {
-                     naviBar1.Settings = settings;
-                     naviBar1.ApplySettings();
-                  }
-               }
-            }
-            catch (Exception ex)
-            {
-               MessageBox.Show(ex.Message);
-            }
-         }
+        private void buttonLoadSettings_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Feature not enabled.");
+            //if (openFileDialogSettings.ShowDialog() == DialogResult.OK)
+            //{
+            //    try
+            //    {
+            //        string fileName = openFileDialogSettings.FileName;
+            //        NaviBarSettingsSerializer serial = new NaviBarSettingsSerializer();
+            //        using (StreamReader reader = new StreamReader(fileName))
+            //        {
+            //            NaviBarSettings settings = serial.Deserialize(reader) as NaviBarSettings;
+            //            if (settings != null)
+            //            {
+            //                naviBar1.Settings = settings;
+            //                naviBar1.ApplySettings();
+            //            }
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show(ex.Message);
+            //    }
+            //}
 
         }
 
